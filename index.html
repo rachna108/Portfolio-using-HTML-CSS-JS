@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Creative Developer</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="loader-circle"></div>
+            <div class="loader-text">LOADING</div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
+
+    <!-- Background Animation (Blobs) -->
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">ALEX<span class="dot">.</span></a>
+            
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Work</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container hero-grid">
+            <div class="hero-content reveal">
+                <p class="hero-subtitle">Hi, I am Alex</p>
+                <h1 class="hero-title">Building the <br><span class="gradient-text">Digital Future</span></h1>
+                <h2 class="hero-role">I am a <span class="typewriter"></span><span class="cursor-blink">|</span></h2>
+                <p class="hero-desc">Transforming ideas into high-performance web experiences using modern technologies and creative design.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image reveal delay-2">
+                <div class="image-wrapper glass">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Profile">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">About Me</h2>
+            <div class="about-grid">
+                <div class="about-card glass reveal">
+                    <h3>Who am I?</h3>
+                    <p>I am a passionate Full Stack Developer based in Tech City. I specialize in building exceptional digital experiences. Currently, I'm focused on building accessible, human-centered products.</p>
+                    <div class="info-row">
+                        <div class="info-item">
+                            <i class="fas fa-code"></i>
+                            <span>5+ Years Coding</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-layer-group"></i>
+                            <span>50+ Projects</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-small">Download CV <i class="fas fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">My Tech Stack</h2>
+            <div class="skills-grid">
+                <div class="skill-card glass reveal">
+                    <i class="fab fa-html5" style="color: #e34c26;"></i>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill-card glass reveal delay-1">
+                    <i class="fab fa-css3-alt" style="color: #264de4;"></i>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill-card glass reveal delay-2">
+                    <i class="fab fa-js" style="color: #f7df1e;"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card glass reveal">
+                    <i class="fab fa-react" style="color: #61dafb;"></i>
+                    <h3>React</h3>
+                </div>
+                <div class="skill-card glass reveal delay-1">
+                    <i class="fab fa-node" style="color: #68a063;"></i>
+                    <h3>Node.js</h3>
+                </div>
+                <div class="skill-card glass reveal">
+                    <i class="fab fa-java" style="color: #f89820;"></i>
+                    <h3>Java</h3>
+                </div>
+                <div class="skill-card glass reveal delay-1">
+                    <i class="fas fa-brain" style="color: #bc13fe;"></i>
+                    <h3>AI / ML</h3>
+                </div>
+               <div class="skill-card glass reveal delay-2">
+                    <i class="fab fa-python" style="color: #3776ab;"></i>
+                    <h3>Python</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">Featured Work</h2>
+            
+            <div class="filter-container reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="ui">UI/UX</button>
+                <button class="filter-btn" data-filter="ai">AI</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass reveal" data-category="web">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Project 1">
+                        <div class="overlay">
+                            <button class="view-btn" data-id="1"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Dashboard</h3>
+                        <p class="category">Web Development</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass reveal delay-1" data-category="ui">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Project 2">
+                        <div class="overlay">
+                            <button class="view-btn" data-id="2"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Finance App UI</h3>
+                        <p class="category">UI/UX Design</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass reveal delay-2" data-category="ai">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80" alt="Project 3">
+                        <div class="overlay">
+                            <button class="view-btn" data-id="3"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI Chat Bot</h3>
+                        <p class="category">Artificial Intelligence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">Get In Touch</h2>
+            <div class="contact-wrapper glass reveal">
+                <div class="contact-info">
+                    <h3>Let's Talk</h3>
+                    <p>Have a project in mind? Fill out the form or send me a direct email.</p>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@alexportfolio.com</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Alex Morgan. Built with <i class="fas fa-heart"></i> and Code.</p>
+        </div>
+    </footer>
+
+    <!-- Modal (Hidden) -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content glass">
+            <span class="close-modal">&times;</span>
+            <img id="modal-img" src="" alt="">
+            <h3 id="modal-title">Project Title</h3>
+            <p id="modal-desc">Project description goes here...</p>
+            <div class="modal-links">
+                <a href="#" class="btn btn-small">Live Demo</a>
+                <a href="#" class="btn btn-outline btn-small">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
