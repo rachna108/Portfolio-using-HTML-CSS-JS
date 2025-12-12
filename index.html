@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rachna | Portfolio</title>
+
+  <!-- Font Awesome CDN (Required for icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Your stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor"></div>
+  <div class="cursor2"></div>
+
+  <!-- FLOATING BACKGROUND PARTICLES -->
+  <div class="animation-wrapper">
+    <div class="particle p1"></div>
+    <div class="particle p2"></div>
+    <div class="particle p3"></div>
+    <div class="particle p4"></div>
+    <div class="particle p5"></div>
+    <div class="particle p6"></div>
+  </div>
+
+  <header>
+    <nav>
+      <div class="logo">[Rachna]</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="assets/Rachna_Resume.pdf" target="_blank" rel="noopener noreferrer" class="download-btn">View Resume</a>
+        </li>
+        <li>
+          <button id="theme-toggle" class="theme-btn">
+            <i class="fas fa-sun"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <div class="home-container">
+        <div class="intro-text">
+          <!-- Added 'glitch' class and 'data-text' for the effect -->
+          <h1>Hi, I'm <span class="highlight glitch" data-text="Rachna">Rachna</span></h1>
+          <p><span class="typing"></span></p>
+        </div>
+        <div class="profile-photo">
+          <img src="assets/Rachna_Portfolio_Image.jpeg" alt="Rachna Profile Photo" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>ABOUT ME</h2>
+      <div class="about-container">
+
+        <div class="about-item">
+          <!-- Added 'hidden-element' for scroll animation -->
+          <div class="about-box hidden-element">
+            <h3>Education</h3>
+            <ul>
+              <li>
+                <strong>B.Tech</strong><br>
+                C.V Raman Global University<br>
+                Bhubaneswar, Odisha<br>
+                9.30 CGPA (2022-2026)
+              </li>
+              <li>
+                <strong>XII</strong><br>
+                Pragya Niketan Public School, Bihar<br>
+                82.4% (2021)
+              </li>
+              <li>
+                <strong>X</strong><br>
+                D.A.V Public School, Bihar<br>
+                88.8% (2019)
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="about-item">
+          <div class="about-box hidden-element">
+            <h3>A Bit About Me</h3>
+            <p>I bridge the gap between human creativity and machine intelligence. As a Full Stack Developer, I craft
+              responsive
+              web applications infused with AI capabilities. I’m obsessed with clean code, sleek UIs, and pushing the
+              boundaries
+              of what the web can do.</p>
+          </div>
+        </div>
+
+        <div class="about-item">
+          <div class="about-box hidden-element">
+            <h3>Social Links</h3>
+            <ul class="social-links">
+              <li>
+                <a href="https://www.linkedin.com/in/rachna-a1320a279/" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/Linkedin_Logo.webp" alt="Linkedin">
+                  LinkedIn
+                </a>
+              </li>
+
+              <li>
+                <a href="https://github.com/rachna108" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/GitHub_Logo.png" alt="GitHub">
+                  GitHub
+                </a>
+              </li>
+
+              <li>
+                <a href="https://leetcode.com/u/rachna_17/" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/LeetCode_Logo.png" alt="LeetCode">
+                  LeetCode
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>PROJECTS</h2>
+      <div class="project-grid">
+        <!-- Added 'hidden-element' for scroll animation -->
+        <div class="project-card hidden-element">
+          <img src="assets/Portfolio_Image.png" alt="Project 1 - ProFolio">
+          <h3>ProFolio</h3>
+          <p>Created my portfolio using HTML, CSS, and JavaScript to showcase projects, skills, and milestones.</p>
+          <a href="https://github.com/rachna108/Portfolio-using-HTML-CSS-JS" class="project-btn" target="_blank"
+            rel="noopener noreferrer">View Project</a>
+        </div>
+        <div class="project-card hidden-element">
+          <img src="assets/Ice_Tales.png" alt="Project 2 - Icy-Tales ">
+          <h3>Icy-Tales</h3>
+          <p>Built a E-Commerce Ice-Cream website to connect local vendors to modern presence with smooth UI.</p>
+          <a href="https://github.com/rachna108/Ice-Cream-Website-using-React" class="project-btn" target="_blank"
+            rel="noopener noreferrer">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="collaborative-projects">
+      <h2>COLLABORATIVE PROJECTS</h2>
+      <div class="project-grid">
+        <div class="project-card hidden-element">
+          <img src="assets/Stock_Management_System.png" alt="Project 1 - Stock_Management_System">
+          <h3>Stock Management</h3>
+          <p>Designed a Stock Management System using Java to efficiently track and manage inventory operations.</p>
+          <a href="https://github.com/rachna108/Stock-Management-System" class="project-btn" target="_blank"
+            rel="noopener noreferrer">View
+            Project</a>
+        </div>
+        <div class="project-card hidden-element">
+          <img src="assets/Employee_Management_System.webp" alt="Project 2 - Employee_Management_System ">
+          <h3>Employee Management</h3>
+          <p>Developed an Employee Management System to manage employee records with CRUD operations.</p>
+          <a href="https://github.com/rachna108/Employee-Management-System" class="project-btn" target="_blank"
+            rel="noopener noreferrer">View
+            Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>SKILLS</h2>
+      <div class="skills-grid">
+
+        <!-- Added 'hidden-element' to skills so they animate nicely -->
+        <!-- HTML -->
+        <div class="skill-card glass hidden-element">
+          <i class="fab fa-html5" style="color: #e34c26;"></i>
+          <h3>HTML</h3>
+        </div>
+
+        <!-- CSS -->
+        <div class="skill-card glass hidden-element">
+          <i class="fab fa-css3-alt" style="color: #264de4;"></i>
+          <h3>CSS3</h3>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="skill-card glass hidden-element">
+          <i class="fab fa-js" style="color: #F7DF1E;"></i>
+          <h3>JavaScript</h3>
+        </div>
+
+        <!-- React -->
+        <div class="skill-card glass hidden-element">
+          <i class="fab fa-react" style="color: #61DBFB;"></i>
+          <h3>React</h3>
+        </div>
+
+        <!-- Java -->
+        <div class="skill-card glass hidden-element">
+          <i class="fab fa-java" style="color: #f89820;"></i>
+          <h3>Java</h3>
+        </div>
+
+        <!-- Python -->
+        <div class="skill-card glass hidden-element">
+          <i class="fab fa-python" style="color: #4584b6;"></i>
+          <h3>Python</h3>
+        </div>
+
+        <!-- MongoDB -->
+        <div class="skill-card glass hidden-element">
+          <i class="fas fa-database" style="color: #4DB33D;"></i>
+          <h3>MongoDB</h3>
+        </div>
+
+        <!-- Node.js -->
+        <div class="skill-card glass hidden-element">
+          <i class="fab fa-node" style="color: #68A063;"></i>
+          <h3>Node.js</h3>
+        </div>
+
+        <!-- Machine Learning -->
+        <div class="skill-card glass hidden-element">
+          <i class="fas fa-brain" style="color: #ff007f;"></i>
+          <h3>Machine Learning</h3>
+        </div>
+
+        <!-- Git -->
+        <div class="skill-card glass hidden-element">
+          <i class="fab fa-git-alt" style="color: #F1502F;"></i>
+          <h3>Git</h3>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==== CERTIFICATES SECTION ================================= -->
+    <section id="certificates">
+      <h2 class="section-title">MY CERTIFICATIONS</h2>
+
+      <div class="certificate-grid">
+
+        <!-- Certificate 1 -->
+        <div class="certificate-card hidden-element">
+          <img src="assets/UI UX Specialization Certificate.png" alt="Google UX Design Certificate" class="cert-img" />
+          <h3>Google UX Design Professional Certificate</h3>
+          <p>Issued by Coursera</p>
+        </div>
+
+        <!-- Certificate 2 -->
+        <div class="certificate-card hidden-element">
+          <img src="assets/Java_Basic_Certificate.png" alt="Java (Basics) Certificate" class="cert-img" />
+          <h3>Java (Basics)</h3>
+          <p>Issued by HackerRank</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==== LIGHTBOX OVERLAY (For Certificates) ================== -->
+    <div id="cert-lightbox" class="lightbox">
+      <span class="lightbox-close" id="cert-lightbox-close">&times;</span>
+      <img id="cert-lightbox-img" class="lightbox-image" src="" alt="Expanded certificate" />
+    </div>
+
+    <!-- Resume Highlight Box -->
+    <section id="resume">
+      <h2>RESUME</h2>
+      <div class="resume-card hidden-element">
+        <h3 class="name">Rachna</h3>
+        <p class="tagline">
+          Full‑Stack Developer | Problem Solver | Tech Enthusiast
+        </p>
+        <a href="assets/Rachna_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-resume">Download
+          Resume</a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>CONTACT ME</h2>
+      <div class="contact-container">
+        <!-- Make sure to keep your Access Key secret if this code is public on GitHub -->
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left hidden-element">
+          <div class="contact-left-title"></div>
+          <input type="hidden" name="access_key" value="aeadd0c1-3653-4db9-a19e-29dcbbe46996">
+          <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required />
+          <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required />
+          <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+          <button type="submit">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+        <div class="contact-right hidden-element">
+          <img src="assets/Contact_Image.jpg" alt="Contact Visual">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button id="backToTop" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <footer>
+    <p>&copy; 2025 Rachna. All rights reserved. Thank You &hearts;</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
